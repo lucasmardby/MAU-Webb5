@@ -5,46 +5,79 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="design.css" />
   </head>
-  <header>
-    <div>
-      <p>
-        Assignment 4 <br />
-        Lucas Mårdby
-      </p>
-    </div>
-    <h1>Homepage</h1>
-  </header>
-  <nav>
-    <table>
-      <tr>
-        <td>
-          <a href="index.html">Start</a>
-        </td>
-        <td><a href="author.html">Author Page</a></td>
-        <td><a href="aboutCSS.html">About CSS</a></td>
-      </tr>
-    </table>
-  </nav>
-  <aside>
-    <h2>Newsletter</h2>
-    <form action="">
-      <label for=""
-        >Name: <input type="text" placeholder="Your name.." size="10px" />
-      </label>
-      <br />
-      <br />
-      <label for=""
-        >Email: <input type="email" placeholder="Your email.." size="10px" />
-      </label>
-      <br />
-      <button>Send</button>
-    </form>
-  </aside>
   <body>
+    <header>
+      <div>
+        <p>
+          Assignment 4 <br />
+          Lucas Mårdby
+        </p>
+      </div>
+      <h1>Homepage</h1>
+    </header>
+    <nav>
+      <table>
+        <tr>
+          <td>
+            <a href="index.html" target="_self">Start</a>
+          </td>
+          <td><a href="author.html" target="_self">Author Page</a></td>
+          <td><a href="aboutCSS.html" target="_self">About CSS</a></td>
+          <td><a href="artists.html" target="_self">My Artists</a></td>
+        </tr>
+      </table>
+    </nav>
+    <aside>
+      <h2>Newsletter</h2>
+      <form>
+        <label
+          >Name: <input type="text" placeholder="Your name.." size="10" />
+        </label>
+        <br />
+        <br />
+        <label
+          >Email: <input type="email" placeholder="Your email.." size="10" />
+        </label>
+        <br />
+        <button>Send</button>
+      </form>
+    </aside>
     <h1>Heading</h1>
-    <p>Lorem ipsum</p>
+    <p>
+      Inline styling is where instead of writing your CSS in a separate file,
+      you write in inside an HTML tag using the style attribute. What this
+      results in is a styling which affects only the tag it is written in,
+      instead of having a CSS file, which would affect the entire HTML document.
+      <br />
+      <br />
+      Writing a separate CSS file is the most powerful and flexible method for
+      many reasons. It is more maintainable, reusable, and scalable than inline
+      styling. Writing CSS for one selector will affect that HTML tag across the
+      entire web page, where as inline styling only touches a single instance of
+      that same tag. This means that you can more easily achieve uniformity with
+      a CSS file as well as making changes to it. Instead of having to pick
+      through style tags over and over again, you simply need to adjust one line
+      of CSS. The reusability of a CSS file is also superior, since you can
+      apply the same style sheet to multiple web pages for greater consistency.
+      <br /><br />
+      Another reason for the usage of a CSS file is the distinction of
+      structured information and styling. By separating the CSS from the HTML,
+      the markup can be semantic, and therefore convey more information and be
+      as clear as possible without being blurred and hard to read with all the
+      inline styling in the way. Also, by writing the CSS in the style tags, it
+      is possible to misuse elements in HTML through the inline styling.
+      Changing the purpose of elements is not advised, as web sites are not
+      always seen through human eyes. If for instance a screen reader meant for
+      people with impaired sight looked through your website, it might mistake
+      parts of it because of the HTML tags used, since it will not take the
+      inline styling into account. <br /><br />
+      However, while there creating a proper CSS file is the best practice,
+      there are places for inline styling as well. Mainly older websites or
+      places like HTML email and WordPress where HTML is accessible but a
+      separate CSS file is not, inline styling would be useful.
+    </p>
+    <footer>
+      <p>Last updated: 2024-04-01</p>
+    </footer>
   </body>
-  <footer>
-    <p>Last updated: 2024-03-26</p>
-  </footer>
 </html>
